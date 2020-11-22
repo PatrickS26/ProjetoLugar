@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProjetoLocalização</string>
+    <string name="no_gps_no_app">Para registrar um lugar e necessario o GPS</string>
+
+</resources>
