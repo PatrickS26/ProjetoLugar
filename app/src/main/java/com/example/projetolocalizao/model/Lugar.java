@@ -1,17 +1,20 @@
 package com.example.projetolocalizao.model;
 
-public class Lugar {
-    private String DataCadastro;
+import java.util.Date;
+
+public class Lugar implements Comparable <Lugar> {
+    private String nomeLugar;
+    private Date DataCadastro;
     private String Descricao;
     private double Lat;
     private double Long;
 
-    public String getDataCadastro() {
+    public Date getDataCadastro() {
 
         return DataCadastro;
     }
 
-    public void setDataCadastro(String dataCadastro) {
+    public void setDataCadastro(Date dataCadastro) {
 
         DataCadastro = dataCadastro;
     }
@@ -19,6 +22,14 @@ public class Lugar {
     public String getDescricao() {
 
         return Descricao;
+    }
+
+    public String getNomeLugar() {
+        return nomeLugar;
+    }
+
+    public void setNomeLugar(String nomeLugar) {
+        this.nomeLugar = nomeLugar;
     }
 
     public void setDescricao(String descricao) {
@@ -41,6 +52,12 @@ public class Lugar {
 
     public void setLong(double aLong) {
         Long = aLong;
+    }
+
+
+    @Override
+    public int compareTo(Lugar lugar) {
+        return this.DataCadastro.compareTo(lugar.DataCadastro);
     }
 }
 

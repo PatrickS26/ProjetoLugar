@@ -36,7 +36,6 @@
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="10dp"
-        android:onClick="onClick"
         android:text="QUALQUER COISA"
         android:textColor="@color/VERDI"
         android:backgroundTint="@color/PRETO"
@@ -48,7 +47,7 @@
         />
 
     <Button
-        android:id="@+id/buttonSave"
+        android:id="@+id/buttonNovoLugar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="0dp"
