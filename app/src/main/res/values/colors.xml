@@ -7,12 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="azul">#29B0E6</color>
     <color name="amarilho">#DCFFDD00</color>
     <color name="PRETO">#000000</color>
     <color name="VERDI">#B91C3FBD</color>
+    <color name="suave">#D6ECBC</color>
+    <color name="AzulMetalico">#5D8094</color>
+    <color name="Azul">#E5E5E0</color>
+    <color name="CinzaPretoAzul">#5A606B</color>
 
-    <color name="bru">#3E2A29</color>
 
 
 </resources>
