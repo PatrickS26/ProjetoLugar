@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         View lugarRecyclerView = findViewById(R.id.list_item);
         ArrayList<Lugar> lugar = new ArrayList<>();
 
@@ -41,12 +42,13 @@ public class MainActivity extends AppCompatActivity {
         Adapter adapter = new Adapter(lugar, this);
         lugarRecyclerView.setAdapter(adapter);
 
+
         LinearLayoutManager layoutManager
                 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true);
         RecyclerView myItems = findViewById(R.id.list_item);
         myItems.setLayoutManager(layoutManager);
 
-        View lugarEditText = findViewById(R.id.editTextDescricaoLugar);
+
     }
 
     public void onClick(View view) {

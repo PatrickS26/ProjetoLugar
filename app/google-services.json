@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "290268111381",
+    "firebase_url": "https://projetolugar-6c11c.firebaseio.com",
+    "project_id": "projetolugar-6c11c",
+    "storage_bucket": "projetolugar-6c11c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290268111381:android:9e3269c2eff980c783e41c",
+        "android_client_info": {
+          "package_name": "com.example.projetolocalizao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290268111381-g05hdcgokj5m4hcaq3dehmni3067ha0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4V7DXYoikPon8O7VJhLE1-YWrZ-1edgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290268111381-g05hdcgokj5m4hcaq3dehmni3067ha0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
