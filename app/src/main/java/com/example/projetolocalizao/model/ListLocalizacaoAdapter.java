@@ -13,12 +13,12 @@ import com.example.projetolocalizao.R;
 
 import java.util.List;
 
-class Adapter extends RecyclerView.Adapter <ViewHolder> {
+public class ListLocalizacaoAdapter extends RecyclerView.Adapter <ViewHolder> {
 
     private List<Lugar> lugar;
     private Context context;
 
-    public Adapter(List<Lugar> lugar, Context context) {
+    public ListLocalizacaoAdapter(List<Lugar> lugar, Context context) {
         this.lugar = lugar;
         this.context = context;
     }

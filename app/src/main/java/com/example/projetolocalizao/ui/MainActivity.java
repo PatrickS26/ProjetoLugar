@@ -16,37 +16,37 @@ import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
+
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.projetolocalizao.R;
+
+import com.example.projetolocalizao.model.ListLocalizacaoAdapter;
 import com.example.projetolocalizao.model.Lugar;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    private ListLocalizacaoAdapter adapter;
+    private RecyclerView lugarRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        View lugarRecyclerView = findViewById(R.id.list_item);
-        ArrayList<Lugar> lugar = new ArrayList<>();
-
-
-        Adapter adapter = new Adapter(lugar, this);
-        lugarRecyclerView.setAdapter(adapter);
-
-
         LinearLayoutManager layoutManager
                 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true);
-        RecyclerView myItems = findViewById(R.id.list_item);
-        myItems.setLayoutManager(layoutManager);
+        lugarRecyclerView = findViewById(R.id.recyclerViewLugar);
+        lugarRecyclerView.setLayoutManager(layoutManager);
+        List<Lugar> lugar = new ArrayList<>();
+
+
+        adapter = new ListLocalizacaoAdapter(lugar, this);
+        lugarRecyclerView.setAdapter(adapter);
 
 
     }
